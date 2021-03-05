@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="p.MainPage">
+
+    <StackLayout BackgroundColor="Yellow" >
+        <Label x:Name="label"
+              Text="adivinaré el numero que pienses, sigue los pasos para que empiece la magia"
+               VerticalOptions="EndAndExpand"
+               FontAttributes="Bold"
+               Padding="40,20"
+               BackgroundColor="Coral"
+               HorizontalTextAlignment="Center"
+               TextColor="Aqua"/>
+        <Button Text="paso 1"
+                VerticalOptions="Fill"
+                TextColor="Red"
+                Padding="40,30"
+                FontAttributes="Bold"
+                BackgroundColor="Aqua"
+                Clicked="Button_Clicked"/>
+        <Button Text="paso 2"
+                TextColor="Red"
+                BackgroundColor="Aqua"
+                Clicked="Button_Clicked_1"
+                Padding="40,30"
+                FontAttributes="Bold"/>
+        <Button Text="paso 3"
+                TextColor="Red"
+                BackgroundColor="Aqua"
+                Clicked="Button_Clicked_2"
+                Padding="40,30"
+                FontAttributes="Bold"/>
+        <Button Text="paso 4"
+                TextColor="Red"
+                BackgroundColor="Aqua"
+                Clicked="Button_Clicked_3"
+                Padding="40,30"
+                FontAttributes="Bold"/>
+        <Button Text="paso 5"
+                TextColor="Red"
+                BackgroundColor="Aqua"
+                Clicked="Button_Clicked_4"
+                Padding="40,30"
+                FontAttributes="Bold"/>
+        <Entry Placeholder="ingrese el resultado" x:Name="resultado"
+               Keyboard="Numeric"
+                VerticalOptions="EndAndExpand"
+               TextColor="Brown"
+               BackgroundColor="Chartreuse"
+               HorizontalTextAlignment="Center"/>
+        <Button Text="adivinar"
+                TextColor="Blue"
+                BackgroundColor="Black"
+                FontAttributes="Bold"
+                Clicked="Button_Clicked_5"/>
+        <Label Text="el número en el que estabas pensando es:"
+               TextColor="Aquamarine"
+               FontAttributes="Bold"
+               BackgroundColor="Coral"
+               Padding="30,20"/>
+        <Entry Placeholder="" x:Name="calcular"
+               BackgroundColor="Chartreuse"
+               FontAttributes="Bold"
+               TextColor="Coral"
+               IsEnabled="False"
+               HorizontalTextAlignment="Center"
+              />
+    </StackLayout>
+
+</ContentPage>
